@@ -36,6 +36,7 @@ const nombre = pokemonInputJs.value;
 function mostrarPokemon(pokemon) {
      console.log("mostrarPokemon ejecutado", pokemon.name);
      console.log("resultadoJs:", resultadoJs);
+       console.log("display resultado:", resultadoJs.style.display='flex');
   const tipos = pokemon.types.map(t => t.type.name).join(', ');
 
   loading.style.display = 'none';
